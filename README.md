@@ -7,4 +7,4 @@ Shell I created this backdoor myself and it was designed to manipulate an anti-b
 -Upload File
 -Change Directory 
 
-<a href="https://t.me/haxorworld1337">More information</a>
+<a href="http://www.jawabaratcyber.com">More information</a>
