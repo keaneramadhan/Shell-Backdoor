@@ -1,2 +1,10 @@
 # Shell-Backdoor
-Shell Backdoor All Bypass
+Shell I created this backdoor myself and it was designed to manipulate an anti-backdoor website
+# Feature:
+-Bypass all Security
+-edit File
+-Rename File
+-Upload File
+-Change Directory 
+
+<a href="https://t.me/haxorworld1337">More information</a>
